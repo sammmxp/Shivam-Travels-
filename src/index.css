@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Geist', sans-serif;
+  --font-display: 'Special Elite', serif;
+
+  --color-wandor-dark: #0a0a0a;
+  --color-wandor-text: #1a1a1a;
+  --color-wandor-muted: #767676;
+  --color-wandor-prompt: #905831;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Geist', sans-serif;
+    overflow-x: hidden;
+    background: #fff;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 3px solid #fff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .nav-link {
+    transition: opacity 0.2s ease;
+  }
+  .nav-link:hover {
+    opacity: 0.55;
+  }
+
+  .btn-primary {
+    transition: all 0.2s ease;
+  }
+  .btn-primary:hover {
+    background-color: #333;
+  }
+  .btn-primary:active {
+    transform: scale(0.95);
+  }
+}

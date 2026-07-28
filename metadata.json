@@ -1,0 +1,6 @@
+{
+  "name": "Wandor",
+  "description": "Travel app landing page with an AI itinerary generator prompt.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
